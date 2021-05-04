@@ -1,0 +1,22 @@
+Pendant les deux premiers tours :
+- Choisit une case au hasard dans les trois cases centrales (C-D-E)
+
+Puis :
+Début de tour : Valorise* chaque pièce "active" (n'étant pas bloquées) des deux joueurs.
+Vérifie le (unique) meilleur coup de l'adversaire : Si le coup clos la partie, le contre.
+[en vérifier plusieurs ?]
+
+L'ordinateur vérifie les trois pièces les plus stratégiques :
+- Choisit, dans l'ordre de préférence :
+-	 la case qui apporte la victoire si elle existe.
+	- La case voisine immédiatement disponible, si la pièce qu'on y met n'est pas bloquée des deux sens de l'axe ensuite.
+	- La case dont la distance pour arriver dans l'axe est la moins élevée.
+
+
+* Valorisation :
+- 10pts pour chaque case vide autour de la pièce
+- 30pts pour chaque case amie autour, et ajout pour chaque pièce amie dans l'axe
+- 1000 pts si 3 pièces allignées (dans le but de donner la priorité)
+[un système de proba en fonction de points est envisageable, mais il faudrait alors baisser les 1000pts]
+Règles supplémentaires:
+- Si pièce (amie ou ennemie) de part et d'autre de la pièce sur un axe : 0pt sur l'axe.

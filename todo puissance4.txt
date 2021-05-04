@@ -1,0 +1,16 @@
+Au lieu de vérifier les pièces stratégiques, faire une simultation des points pour chacune des colonnes 
+
+PieceStratégique utile ? Rappatriement dans Pièce ?
+
+La distance minimale lui fait rater des opportunités, il faudrait qu'il calcule le nb de points
+
+
+XXX
+OOO_
+L'ordi X choisira : (car case pas dispo de suite)
+__X
+XXX_
+OOO
+
+
+L'ordi ne voit pas arriver le plafond, continue de mettre en colonne quand pas assez de place
