@@ -51,7 +51,13 @@ public class Main {
         int choix;
         do {
             System.out.println(">>");
-            choix = scanner.nextInt();
+            if(scanner.hasNextInt()){
+                choix = scanner.nextInt();
+            }
+            else{
+                scanner.nextLine();
+                choix = 0;
+            }
         }while (choix != 1 && choix != 2 && choix != 3);
 
         j1 = initJoueur(1, "X", choix !=3);
